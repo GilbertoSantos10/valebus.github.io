@@ -1,0 +1,38 @@
+// TAGs
+body {height: 100%;width: 100%;
+}
+html {height: 100%;width: 100%;
+}
+img{padding: 5px;
+}
+
+// CLASSES
+li.nav-item{margin: 5px;
+}
+.cards-div{padding: 10px;
+}
+.card-title{padding-left: 10px;
+}
+.carousel-caption{top: 30px;
+}
+.carousel-img{width: 95%;padding: 4px;margin-bottom:5px;
+}
+.carousel-inner img {height: 100%;margin-top: 10px;
+}
+.carousel.slide{padding: 0;margin: 0;
+}
+.center {display: block;margin-left: auto;margin-right: auto;
+}
+.nav-link{font-size:1.35rem;
+}
+
+// DEVICES
+@media (max-width:667px) {
+  .collapse-carousel-caption {display:none;}
+  .first-section{max-height: 80%;padding-top: 50px;}
+  .desfault-section{min-height: 100%;padding-top:20px;}
+}
+@media (min-width:668px) {
+  .first-section{min-height: 100%;padding-top: 60px;}
+  .desfault-section{min-height: 100%;padding-top: 100px;}
+}
