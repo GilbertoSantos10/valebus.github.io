@@ -1,68 +1,67 @@
-body {
-    width: 100%;
-    height: 100%;
+// TAGs
+body {height: 100%;width: 100%;
 }
-html {
-    width: 100%;
-    height: 100%;
+html {height: 100%;width: 100%;
 }
-img{
-  padding: 5px;
+img{padding: 5px;
 }
-.destak{
-  color:#191970;
+
+// CLASSES
+li.nav-item{margin: 5px;
 }
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.cards-div{padding: 10px;
 }
-.carousel-img{
-  width: 95%;
-  background-color: #fff;
-  padding: 4px;
+.card-title{padding-left: 10px;
 }
-.carousel.slide{
-  padding: 0;
-  margin: 0;
+.carousel-caption{top: 30px;
 }
-.carousel-caption{
-	top: 30px;
+.carousel-img{width: 95%;padding: 4px;margin-bottom:5px;
 }
-.carousel-inner img {
-    height: 100%;
-    margin-top: 10px;
+.carousel-inner img {height: 100%;margin-top: 10px;
 }
-.div-cards{
-  padding: 10px;
+.carousel.slide{padding: 0;margin: 0;
 }
-.navbar{
-  background: #200772;
+.center {display: block;margin-left: auto;margin-right: auto;
 }
-#section1{
-  background: #DCDCDC;
+.nav-link{font-size:1.35rem;
 }
-#section2{
-  background: #F0FFFF;
+
+//NAVEGAÇÃO
+.nav-link a:hover{color: fff;
 }
-#section3{
-  background: #DCDCDC;
+
+// CORES
+// TAGs
+
+// CLASSES
+.bg-nav{background-color:#071871!important}
+.carousel-img{background-color: #fff;}
+.destak{color:#191970;}
+.navbar{background-color: #071871;}
+
+// DEVICES
+@media (max-width:667px){
+  #section1{background: #FFF;}
+  #section2{background: #F0FFFF;}
+  #section3{background: #DCDCDC;}
+  #section4{background: #FFF;}
+  #section5{background: #DCDCDC;}
 }
-#section4{
-  background: #fff;
+@media (min-width:668px) {
+  #section1{background: #DCDCDC;}
+  #section2{background: #F0FFFF;}
+  #section3{background: #DCDCDC;}
+  #section4{background: #FFF;}
+  #section5{background: #DCDCDC;}
 }
-#section5{
-  background: #DCDCDC;
+
+// DEVICES
+@media (max-width:667px) {
+  .collapse-carousel-caption {display:none;}
+  .first-section{max-height: 80%;padding-top: 50px;}
+  .desfault-section{min-height: 100%;padding-top:20px;}
 }
-li.nav-item{
-  margin: 5px;
-}
-.nav-link{
-  font-size:1.35rem;
-}
-.nav-link a:hover{
-  color: fff;
-}
-.card-title{
-  padding-left: 10px;
+@media (min-width:668px) {
+  .first-section{min-height: 100%;padding-top: 60px;}
+  .desfault-section{min-height: 100%;padding-top: 100px;}
 }

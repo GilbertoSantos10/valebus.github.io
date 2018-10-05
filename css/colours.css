@@ -6,18 +6,9 @@
 .destak{color:#191970;}
 .navbar{background-color: #071871;}
 
-// DEVICES
-@media (max-width:667px){
-  #section1{background: #FFF;}
-  #section2{background: #F0FFFF;}
-  #section3{background: #DCDCDC;}
-  #section4{background: #FFF;}
-  #section5{background: #DCDCDC;}
-}
-@media (min-width:668px) {
+// IDs
   #section1{background: #DCDCDC;}
   #section2{background: #F0FFFF;}
   #section3{background: #DCDCDC;}
   #section4{background: #FFF;}
   #section5{background: #DCDCDC;}
-}
