@@ -6,25 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+    <link rel="stylesheet" type="text/css" href="css/layout.css">
+    <link rel="stylesheet" type="text/css" href="css/navigation.css">
+    <link rel="stylesheet" type="text/css" href="css/colours.css">
+    <link rel="stylesheet" type="text/css" href="css/typography.css">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
-    <style>
-      @media (max-width:667px) {
-        .collapse-carousel-caption {display:none;}
-        .first-section{max-height: 80%;padding-top: 50px;}
-        .desfault-section{min-height: 100%;padding-top:20px;}
-      }
-      @media (min-width:668px) {
-        .first-section{min-height: 100%;padding-top: 60px;}
-        .desfault-section{min-height: 100%;padding-top: 100px;}
-      }
-    </style>
   </head>
   <body>
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+    <nav class="navbar navbar-expand-sm bg-nav navbar-dark fixed-top">
       <a class="navbar-brand" href="#">
         <img src="images/logo.jpg" width="auto" height="60" alt="logo">
       </a>
@@ -65,7 +59,7 @@
           <li data-target="#demo" data-slide-to="1"></li>
           <li data-target="#demo" data-slide-to="2"></li>
         </ul>
-      <div class="carousel-inner">
+      <div class="carousel-inner center">
         <div class="carousel-item active">
           <img class="carousel-img center" src="images/articulado.jpg" alt="ônibus articulado">
           <div class="carousel-caption collapse-carousel-caption">
@@ -144,7 +138,7 @@
       <div class="container-fluid">
         <h2 class="text-center destak">Nossos Serviços</h2>
         <div class="row">
-          <div class="col-sm-3 div-cards">
+          <div class="col-sm-3 cards-div">
             <div class="card">
                 <h4 class="card-title align-center">Serviço 1</h4>
               <img class="card-img-top" src="images/imagem_exemplo.jpg" alt="Serviço 1" style="width:100%">
@@ -154,7 +148,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-3 div-cards">
+          <div class="col-sm-3 cards-div">
             <div class="card">
               <h4 class="card-title">Serviço 2</h4>
               <img class="card-img-top" src="images/imagem_exemplo.jpg" alt="Serviço 1" style="width:100%">
@@ -164,7 +158,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-3 div-cards">
+          <div class="col-sm-3 cards-div">
             <div class="card">
               <h4 class="card-title">Serviço 3</h4>
               <img class="card-img-top" src="images/imagem_exemplo.jpg" alt="Serviço 1" style="width:100%">
@@ -174,7 +168,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-3 div-cards">
+          <div class="col-sm-3 cards-div">
             <div class="card">
               <h4 class="card-title">Serviço 4</h4>
               <img class="card-img-top" src="images/imagem_exemplo.jpg" alt="Serviço 1" style="width:100%">
