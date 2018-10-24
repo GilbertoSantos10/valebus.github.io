@@ -12,3 +12,7 @@
   #section3{background: #DCDCDC;}
   #section4{background: #FFF;}
   #section5{background: #DCDCDC;}
+
+  // CLASSES
+  .nav-link a:hover{color: fff;
+  }
