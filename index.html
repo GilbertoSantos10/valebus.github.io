@@ -7,36 +7,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-
     <link rel="stylesheet" type="text/css" href="css/layout.css">
-    <link rel="stylesheet" type="text/css" href="css/navigation.css">
     <link rel="stylesheet" type="text/css" href="css/colours.css">
-    <link rel="stylesheet" type="text/css" href="css/fontstyle.css">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
     <style>
       @media (max-width:667px) {
+        img.logo{width: auto; height: 40px;}
         .collapse-carousel-caption {display:none;}
-        .first-section{max-height: 80%;padding-top: 50px;}
-        .desfault-section{min-height: 100%;padding-top:20px;}
-        .half {width: 100%;padding: 2%;}
-        #section1{background: #FFF;}
+        .desfault-section{padding-top: 65px;padding-bottom: 20px;}
+        #section1{padding-top: 42px;}
       }
       @media (min-width:668px) {
-        .first-section{min-height: 100%;padding-top: 60px;}
-        .desfault-section{min-height: 100%;padding-top: 100px;}
-        .half {width: 46%;padding: 2%;}
-        #section1{background: #DCDCDC;}
+        img.logo{width: auto; height: 60px;}
+        .desfault-section{padding-top: 90px;padding-bottom: 20px;}
+        #section1{padding-top: 62px;}
       }
     </style>
+
   </head>
   <body>
     <nav class="navbar navbar-expand-sm bg-nav navbar-dark fixed-top">
       <a class="navbar-brand" href="#">
-        <img src="images/logo.jpg" width="auto" height="70" alt="logo">
+        <img class="logo" src="images/logo.jpg" alt="logo">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
@@ -59,42 +51,44 @@
       </div>
     </nav>
     <br>
-    <section id="section1" class="first-section">
-      <!-- The slideshow -->
+    <section id="section1" class="desfault-section">
       <div id="demo" class="carousel slide" data-ride="carousel">
+        <!-- The slideshow -->
         <ul class="carousel-indicators">
           <li data-target="#demo" data-slide-to="0" class="active"></li>
-          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="1" class=""></li>
         </ul>
-      <div class="carousel-inner center">
-        <div class="carousel-item active">
-          <img class="carousel-img center" src="images/articulado1.jpg" alt="ônibus articulado">
-          <div class="carousel-caption collapse-carousel-caption">
-            <h5 class="text-center destak">
-            Manutenção e reparos em sanfonas de ônibus articulados de forma rápida na garagem da sua empresa.
-          </h5>
+
+        <div class="carousel-inner center">
+          <div class="carousel-item active">
+            <img class="carousel-img center" src="images/articulado1.jpg" alt="ônibus articulado">
+            <div class="carousel-caption collapse-carousel-caption">
+              <h5 class="text-center destak">
+                Manutenção e reparos em sanfonas de ônibus articulados de forma rápida na garagem da sua empresa.
+              </h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="carousel-img center" src="images/articulado2.jpg" alt="ônibus articulado">
+            <div class="carousel-caption collapse-carousel-caption">
+              <h5 class="text-center destak">
+                Não importa onde a empresa esteja pois, atendemos em qualquer local do Brasil.
+              </h5>
+            </div>
           </div>
         </div>
-        <div class="carousel-item">
-          <img class="carousel-img center" src="images/articulado2.jpg" alt="ônibus articulado">
-          <div class="carousel-caption collapse-carousel-caption">
-            <h5 class="text-center destak">
-            Não importa onde a empresa esteja pois, atendemos em qualquer local do Brasil.
-          </h5>
-          </div>
-        </div>
+
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
       </div>
-<!-- Left and right controls -->
-<a class="carousel-control-prev" href="#demo" data-slide="prev">
-  <span class="carousel-control-prev-icon"></span>
-</a>
-<a class="carousel-control-next" href="#demo" data-slide="next">
-  <span class="carousel-control-next-icon"></span>
-</a>
-</div>
     </section>
     <section id="section2" class="desfault-section">
-      <div class="container">
+      <div class="container-fluid">
         <h2 class="text-center destak">A Vale Bus</h2>
         <p class="text-justify">
           Somos a Vale Bus, empresa especializada em manutenção e reparos em sanfonas de ônibus articulados, no mercado desde 15 de julho de 2016.
@@ -136,7 +130,9 @@
     <section id="section3" class="desfault-section">
       <div class="container-fluid">
         <h2 class="text-center destak">Nossos Serviços</h2>
-        <p class="text-center">Manutenção e reparos em sanfonas de ônibus articulados na garagem.</p>
+        <p class="text-center">
+          Manutenção e reparos em sanfonas de ônibus articulados na garagem da sua empresa.
+        </p>
         <div class="row">
           <div class="p-0 col-2 col-4">
             <img src="images/foto_1.jpg" class="img-fluid"> </div>
@@ -157,52 +153,53 @@
     </section>
     <section id="section4" class="desfault-section">
       <div class="container-fluid">
-          <h2 class="text-center destak">Solicite nosso serviços</h2>
-          <p class="text-center">
-            Entre em contato conosco agora mesmo
-          </p>
-          <div class="row">
-            <div class="half">
-              <form>
-                  <div class="form-group row">
-                    <label for="example-text-input" class="col-2 col-form-label">Nome</label>
-                    <div class="col-8">
-                      <input class="form-control" type="text" id="example-text-input" placeholder="Nome">
-                    </div>
+        <h2 class="text-center destak">Solicite nosso serviços</h2>
+        <p class="text-center">
+          Entre em contato conosco agora mesmo
+        </p>
+        <div class="row">
+          <div class="col-sm-7">
+            <form>
+                <div class="form-group row">
+                  <label for="example-text-input" class="col-sm-2 col-form-label">Nome</label>
+                  <div class="col-sm-10">
+                    <input class="form-control" type="text" id="example-text-input" placeholder="Nome">
                   </div>
-                  <div class="form-group row">
-                    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-                    <div class="col-8">
-                      <input class="form-control" type="text" id="example-text-input" placeholder="Email">
-                    </div>
+                </div>
+                <div class="form-group row">
+                  <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                  <div class="col-sm-10">
+                    <input class="form-control" type="email" id="example-text-input" placeholder="Email">
                   </div>
-                  <div class="form-group row">
-                    <label for="example-tel-input" class="col-2 col-form-label">Telefone</label>
-                    <div class="col-8">
-                      <input class="form-control" type="tel" id="example-tel-input"placeholder="(55)-555-5555">
-                    </div>
+                </div>
+                <div class="form-group row">
+                  <label for="example-tel-input" class="col-sm-2 col-form-label">Telefone</label>
+                  <div class="col-sm-10">
+                    <input class="form-control" type="tel" id="example-tel-input" placeholder="(55)-555-5555">
                   </div>
-                  <div class="form-group row">
-                    <label for="example-tel-input" class="col-2 col-form-label">Serviço</label>
-                    <div class="col-8">
-                      <input class="form-control" type="text" id="example-text-input" placeholder="Descreva o serviço a ser executado">
-                    </div>
+                </div>
+                <div class="form-group row">
+                  <label for="example-tel-input" class="col-sm-2 col-form-label">Serviço</label>
+                  <div class="col-sm-10">
+                    <textarea rows="4" cols="50" name="comment" form="usrform" class="form-control" placeholder="Descreva o serviço a ser executado"></textarea>
                   </div>
-                  <button type="submit" class="btn btn-primary" style="float:right;">Enviar informações</button>
-              </form>
-            </div>
-            <div class="half">
-              <h4 class="text-center destak">Nossos Contatos</h4>
-              <p></p>
-              <p class="text-center">
-                Telefone
-              </p>
-              <p class="text-center">
-                Email
-              </p>
-            </div>
-          </div> <!-- fecha row -->
+                </div>
+                <button type="submit" class="btn btn-primary" style="float:right;">Enviar informações</button>
+            </form>
+          </div>
+          <div class="col-sm-5">
+            <h4 class="text-center destak">Nossos Contatos</h4>
+            <p></p>
+            <p class="text-center">Telefone: (12) 98888-8888</p>
+            <p class="text-center">Email: contato@valebus.com.br</p>
+          </div>
         </div>
+      </div>
     </section>
   </body>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
 </html>
