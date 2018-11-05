@@ -12,15 +12,19 @@
 
     <style>
       @media (max-width:667px) {
-        img.logo{width: auto; height: 40px;}
+        img.logo{width: auto; height: 50px;}
+        .col-6, .col-12{-ms-flex:0 0 33%;flex:0 0 33%;max-width:33%}
         .collapse-carousel-caption {display:none;}
         .desfault-section{padding-top: 65px;padding-bottom: 20px;}
-        #section1{padding-top: 42px;}
+        .img-Click{padding: 2px;}
+        .navbar-toggler{padding-top: 12px;}
+        #section1{padding-top: 30px;}
       }
       @media (min-width:668px) {
-        img.logo{width: auto; height: 60px;}
+        img.logo{width: auto; height: 50px;}
         .desfault-section{padding-top: 90px;padding-bottom: 20px;}
-        #section1{padding-top: 62px;}
+        .img-Click{padding: 5px;}
+        #section1{padding-top: 35px;}
       }
     </style>
 
@@ -31,7 +35,9 @@
         <img class="logo" src="images/logo.jpg" alt="logo">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <p>Menu
         <span class="navbar-toggler-icon"></span>
+      </p>
       </button>
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav">
@@ -52,6 +58,7 @@
     </nav>
     <br>
     <section id="section1" class="desfault-section">
+      <div class="well"></div>
       <div id="demo" class="carousel slide" data-ride="carousel">
         <!-- The slideshow -->
         <ul class="carousel-indicators">
@@ -89,7 +96,9 @@
     </section>
     <section id="section2" class="desfault-section">
       <div class="container-fluid">
-        <h2 class="text-center destak">A Vale Bus</h2>
+        <div class="well">
+          <h2 class="text-center destak">A Vale Bus</h2>
+        </div>
         <p class="text-justify">
           Somos a Vale Bus, empresa especializada em manutenção e reparos em sanfonas de ônibus articulados, no mercado desde 15 de julho de 2016.
           Possuímos uma equipe altamente especializada para atender as necessidades de nossos clientes na sua própria garagem em qualquer lugar do Brasil.
@@ -129,34 +138,65 @@
     </section>
     <section id="section3" class="desfault-section">
       <div class="container-fluid">
-        <h2 class="text-center destak">Nossos Serviços</h2>
-        <p class="text-center">
-          Manutenção e reparos em sanfonas de ônibus articulados na garagem da sua empresa.
-        </p>
-        <div class="row">
-          <div class="p-0 col-2 col-4">
-            <img src="images/foto_1.jpg" class="img-fluid"> </div>
-          <div class="p-0 col-2 col-4">
-            <img src="images/foto_2.jpg" class="img-fluid"> </div>
-          <div class="p-0 col-2 col-4">
-            <img src="images/foto_3.jpg" class="img-fluid"> </div>
+        <div class="well">
+          <h2 class="text-center destak">Nossos Serviços</h2>
+          <h6 class="text-center">Manutenção e reparos em sanfonas de ônibus articulados na garagem da sua empresa.</h6>
         </div>
         <div class="row">
-          <div class="p-0 col-2 col-4">
-            <img src="images/foto_4.jpg" class="img-fluid"> </div>
-          <div class="p-0 col-2 col-4">
-            <img src="images/foto_5.jpg" class="img-fluid"> </div>
-          <div class="p-0 col-2 col-4">
-            <img src="images/foto_6.jpg" class="img-fluid"> </div>
-         </div>
+          <div class="p-0 col-4 ">
+            <img src="images/foto_1.jpg" class="img-fluid img-Click"> </div>
+          <div class="p-0 col-4">
+            <img src="images/foto_2.jpg" class="img-fluid img-Click"> </div>
+          <div class="p-0 col-4">
+            <img src="images/foto_3.jpg" class="img-fluid img-Click"> </div>
+        </div>
+        <div class="row">
+          <div class="p-0 col-4">
+            <img src="images/foto_4.jpg" class="img-fluid img-Click"> </div>
+          <div class="p-0 col-4">
+            <img src="images/foto_5.jpg" class="img-fluid img-Click"> </div>
+          <div class="p-0 col-4">
+            <img src="images/foto_6.jpg" class="img-fluid img-Click"> </div>
+        </div>
+        <div class="well">
+          <h6 class="text-center">Levantamento de sanfonas.</h6>
+        </dv>
+        <div class="row">
+          <div class="col-sm-6 div-cards">
+            <div class="card-body">
+              <h6 class="text-center">Antes.</h6>
+              <div class="row">
+                <div class="p-0 col-12">
+                  <img src="images/foto_1sa.jpg" class="img-fluid img-Click"> </div>
+                <div class="p-0 col-6">
+                  <img src="images/foto_2sa.jpg" class="img-fluid img-Click"> </div>
+                <div class="p-0 col-6">
+                  <img src="images/foto_3sa.jpg" class="img-fluid img-Click"> </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 div-cards">
+            <div class="card-body">
+              <h6 class="text-center">Depois do serviço.</h6>
+              <div class="row">
+                <div class="p-0 col-12">
+                  <img src="images/foto_1sd.jpg" class="img-fluid img-Click"> </div>
+                <div class="p-0 col-6">
+                  <img src="images/foto_2sd.jpg" class="img-fluid img-Click"> </div>
+                <div class="p-0 col-6">
+                  <img src="images/foto_3sd.jpg" class="img-fluid img-Click"> </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <section id="section4" class="desfault-section">
       <div class="container-fluid">
-        <h2 class="text-center destak">Solicite nosso serviços</h2>
-        <p class="text-center">
-          Entre em contato conosco agora mesmo
-        </p>
+        <div class="well">
+          <h2 class="text-center destak">Solicite nosso serviços</h2>
+          <p class="text-center">Entre em contato conosco agora mesmo!</p>
+        </div>
         <div class="row">
           <div class="col-sm-7">
             <form>
@@ -196,10 +236,19 @@
         </div>
       </div>
     </section>
+    <footer>
+      <p  class="copyright">Valebus &copy; 2018</p>
+    </footer>
   </body>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <script src="js/scrolling.js"></script>
+  <script>
+    $(".nav-link").on("click", function(){
+     $('.navbar-collapse').collapse('hide');
+    });
+  </script>
 
 </html>
