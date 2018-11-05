@@ -14,5 +14,12 @@
   #section5{background: #DCDCDC;}
 
   // CLASSES
+  .div-cards{background: #FFF;
+  }
   .nav-link a:hover{color: fff;
+  }
+  .img-Click{
+    background-color:#DCDCDC;
+  }
+  .copyright{background-color:#071871;color: #D7D7D7;
   }

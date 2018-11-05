@@ -3,11 +3,51 @@ body {height: 100%;width: 100%;
 }
 html {height: 100%;width: 100%;
 }
+
+//CLASSES
+.btn{margin-bottom: 50px;
+}
 .carousel-img{width: 98%;padding: 4px;
 }
 .carousel-caption{top: 30px;
 }
-.btn{margin-bottom: 50px;
+.copyright{height:35px;width: 100%;margin-top: 150px;padding: 10px;font-size:0.65rem;text-align: right;
 }
-.nav-link{font-size:1.15rem;
+.nav-link{font-size:1.05rem;
 }
+.img-Click{//cursor: pointer;
+}
+.text-center{text-align:center;
+}
+.well{padding: 20px 0px 0px 0px;
+}
+
+
+#janelaModal{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  Left 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  overflow: auto;
+}
+#imgModal{
+  margin: auto;
+  display: block;
+  width:  100%;
+  max-width: 800px;
+}
+#btModal{
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+  l
