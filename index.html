@@ -3,11 +3,6 @@
   <head>
      <title>Vale Bus - Manutenção de sanfonas de ônibus articulado.</title>
      <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
-    
-    <meta name="theme-color" content="#071871">
-    <meta name="apple-mobile-web-app-status-bar-style" content="#071871">
-    <meta name="msapplication-navbutton-color" content="#071871">
-   
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -22,14 +17,17 @@
         .collapse-carousel-caption {display:none;}
         .desfault-section{padding-top: 65px;padding-bottom: 20px;}
         .img-Click{padding: 2px;}
+        .nav-link{font-size:1.05rem;}
         .navbar-toggler{padding-top: 12px;}
-        #section1{padding-top: 30px;}
+        #section1{padding-top: 0px;}
       }
       @media (min-width:668px) {
-        img.logo{width: auto; height: 50px;}
+        img.logo{width: auto; height: 70px;}
         .desfault-section{padding-top: 90px;padding-bottom: 20px;}
         .img-Click{padding: 5px;}
-        #section1{padding-top: 35px;}
+        .nav-item{padding-left: 20px;}
+        .nav-link{font-size:1.35rem;}
+        #section1{padding-top: 0px;}
       }
     </style>
 
@@ -169,7 +167,7 @@
         <div class="row">
           <div class="col-sm-6 div-cards">
             <div class="card-body">
-              <h6 class="text-center">Sanfona caída (Antes).</h6>
+              <h6 class="text-center">Antes.</h6>
               <div class="row">
                 <div class="p-0 col-12">
                   <img src="images/foto_1sa.jpg" class="img-fluid img-Click"> </div>
@@ -204,39 +202,45 @@
         </div>
         <div class="row">
           <div class="col-sm-7">
-            <form>
+            <form name="FrmContato" method="post" action="teste.php">
+                <div class="form-group row">
+                  <label for="example-text-input" class="col-sm-2 col-form-label">Empresa</label>
+                  <div class="col-sm-10">
+                    <input class="form-control" name="empresa" type="text" id="example-text-input" placeholder="Empresa">
+                  </div>
+                </div>
                 <div class="form-group row">
                   <label for="example-text-input" class="col-sm-2 col-form-label">Nome</label>
                   <div class="col-sm-10">
-                    <input class="form-control" type="text" id="example-text-input" placeholder="Nome">
+                    <input class="form-control" name="nome" type="text" id="example-text-input" placeholder="Contato">
                   </div>
                 </div>
                 <div class="form-group row">
                   <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
                   <div class="col-sm-10">
-                    <input class="form-control" type="email" id="example-text-input" placeholder="Email">
+                    <input class="form-control" name="email" type="email" id="example-text-input" placeholder="Email">
                   </div>
                 </div>
                 <div class="form-group row">
                   <label for="example-tel-input" class="col-sm-2 col-form-label">Telefone</label>
                   <div class="col-sm-10">
-                    <input class="form-control" type="tel" id="example-tel-input" placeholder="(55)-555-5555">
+                    <input class="form-control" name="fone" type="tel" id="example-tel-input" placeholder="(55)-555-5555">
                   </div>
                 </div>
                 <div class="form-group row">
                   <label for="example-tel-input" class="col-sm-2 col-form-label">Serviço</label>
                   <div class="col-sm-10">
-                    <textarea rows="4" cols="50" name="comment" form="usrform" class="form-control" placeholder="Descreva o serviço a ser executado"></textarea>
+                    <textarea rows="4" cols="50" name="message" form="usrform" class="form-control" placeholder="Descreva o serviço a ser executado"></textarea>
                   </div>
                 </div>
-                <button type="submit" class="btn btn-primary" style="float:right;">Enviar informações</button>
+                <button name="enviar" type="submit" class="btn btn-primary" style="float:right;">Enviar informações</button>
             </form>
           </div>
           <div class="col-sm-5">
             <h4 class="text-center destak">Nossos Contatos</h4>
             <p></p>
-            <p class="text-center">Telefone: (12) 98888-8888</p>
-            <p class="text-center">Email: contato@valebus.com.br</p>
+            <p class="text-center">Telefone: (12) 99168-7981</p>
+            <p class="text-center">Email: contato@valebusbrasil.com.br</p>
           </div>
         </div>
       </div>
