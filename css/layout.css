@@ -1,51 +1,25 @@
 // TAGs
-body {height: 100%;width: 100%;
-}
-html {height: 100%;width: 100%;
-}
+body {height: 100%;width: 100%;}
+html {height: 100%;width: 100%;}
 
-//CLASSES
-.btn{margin-bottom: 50px;
-}
-.carousel-img{width: 98%;padding: 6px;
-}
-.carousel-caption{top: 80px;
-}
-.copyright{height:35px;width: 100%;margin-top: 150px;padding: 10px;font-size:0.65rem;text-align: right;
-}
-.img-Click{//cursor: pointer;
-}
-.text-center{text-align:center;
-}
-.well{padding: 20px 0px 0px 0px;
-}
+//IDs e CLASSES
+.desfault-section{width: 100%;}
+.carousel-img{width:100%;padding: 2px;}
+.btn{margin-bottom: 50px;}
+footer.copyright{height:35px;padding:5px;}
+p.copyright{float: right;font-size:0.85rem;text-align: right;}
 
-
-#janelaModal{
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-top: 100px;
-  Left 0px;
-  top: 0px;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0,0.8);
-  overflow: auto;
+@media only screen and (max-width: 667px) {
+  .desfault-section{padding: 90px 5px 15px 5px;;}
+  .navbar-toggler{height: 60px;padding-top: 12px;}
+  .logo{height: 66px;padding: 2px;}
+  .carousel-caption{display: none;}
+  form{padding-bottom: 30px;}
 }
-#imgModal{
-  margin: auto;
-  display: block;
-  width:  100%;
-  max-width: 800px;
+@media only screen and (min-width: 668px) {
+  .desfault-section{padding: 100px 20px 50px 20px;;}
+  .navbar{height: 100px;}
+  .nav-link{font-size:1.25rem;}
+  .logo{height: 90px;padding: 5px;}
+  .carousel-caption{top: 15px;}
 }
-#btModal{
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #fff;
-  font-size: 40px;
-  font-weight: bold;
-  cursor: pointer;
-}
-  l
